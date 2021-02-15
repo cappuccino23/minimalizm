@@ -1,0 +1,21 @@
+<ul class="menu_works clearfix">
+
+    <li class="menu-list">  <a href="{% url 'main:category_product' 0 %}" class="menu-link {% if request.resolver_match.kwargs.pk == 0 %}menu-link-active{% endif %}">All</a></li>
+
+    {% for category in categories %}
+
+        <li class="menu-list">
+            <a href="{% url 'main:category_product' category.pk %}" class="menu-link {% if request.resolver_match.kwargs.pk|add:0 == category.pk %}menu-link-active{% endif %}">
+                {{ category.name }}
+            </a>
+        </li>
+
+    {% endfor %}
+
+   <li class="menu-list">
+            <a href="{% url 'main:hot_product' %}" class="menu-link {% if request.resolver_match.kwargs.pk|add:0 == category.pk %}menu-link-active{% endif %}"> Hot offer
+            </a>
+        </li>
+
+
+</ul>

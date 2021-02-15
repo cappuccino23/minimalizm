@@ -1,0 +1,24 @@
+{% extends 'myadminapp/base.html' %}
+{% load staticfiles %}
+
+{% include 'myadminapp/includes/inc__admin_menu.html' %}
+
+
+{% block container %}
+
+    <div class="login">
+
+        <div class="h2 text-center head">Update User </div>
+
+            <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <br>
+                <input class="form-control" type="submit" value="Update">
+            </form>
+
+        <a href="{% url 'myadmin:index' %}"  class="btn btn-round form-control"> List Users  </a>
+
+    </div>>
+
+{% endblock %}

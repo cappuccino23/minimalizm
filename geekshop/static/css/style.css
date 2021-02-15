@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.padding-site {
+    padding-left: 98px;
+    padding-right: 98px;
+
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+
+}
+
+.header {
+    height: 130px;
+}
+
+.slider {
+    height: 652px;
+    background-image: url(/static/img/img_slider.png);
+    text-align: center;
+    position: relative;
+
+}
+
+.slider-text {
+    padding-top: 228px;
+}
+
+.slider-h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #4d4d4d;
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.slider-content {
+    color: #4d4d4d;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*-----------Меню-----------------*/
+
+.menu {
+    padding-top: 57px;
+    padding-right: 149px;
+    float: right;
+    text-align: right;
+
+}
+
+.menu-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 30px;
+
+}
+
+.menu-link:hover {
+    color: #212121;
+    border-bottom: 2px solid #212121;
+}
+
+.menu-link-active {
+    text-decoration: none;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #212121;
+    padding: 10px 13px;
+}
+
+
+.logo {
+    padding-left: 150px;
+    padding-top: 51px;
+    float: left;
+}
+
+
+/*-----------Меню-----------------*/
+
+/*кнопка*/
+.button {
+    font-family: 'Quicksand', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    width: 290px;
+    height: 50px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    background-color: #4d4d4d;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 50px;
+    letter-spacing: 3.6px;
+
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+.button:hover {
+    box-shadow: none;
+}
+
+.arrow {
+    width: 9px;
+    height: 12px;
+    color: #ffffff;
+}
+
+.duis {
+    height: 300px;
+    padding-left: 200px;
+
+
+}
+
+.duis-text {
+    width: 330px;
+    float: left;
+    padding-right: 98px;
+    color: #727272;
+}
+
+.duis-h2 {
+    color: #212121;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.two-col-grid {
+    width: 1500px;
+    float: left;
+    position: absolute;
+}
+
+.grid-item-2 {
+    float: left;
+    width: 260px;
+    height: 325px;
+    padding: 20px;
+
+}
+
+.recent_work {
+    width: 1500px;
+    height: 410px;
+    padding-bottom: 120px;
+    float: left;
+}
+
+.recent_work-h2 {
+    color: #212121;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.layer_1 {
+    color: #fff;
+    position: relative;
+    width: 265px;
+    height: 320px;
+}
+
+.layer_2 {
+    text-align: center;
+    background: url(/static/img/nytt.png);
+    position: absolute;
+    padding-top: 30px;
+    top: 255px;
+    width: 260px;
+    height: 70px;
+    z-index: 1;
+}
+
+.menu_works {
+    width: 1500px;
+    padding-top: 57px;
+    padding-left: 149px;
+    float: left;
+    text-align: left;
+
+}
+
+.arts_block {
+    padding-top: 50px;
+    width: 1500px;
+    float: left;
+}
+
+.blocks {
+    float: left;
+    padding-left: 150px;
+    height: 350px;
+    width: 100%;
+}
+
+.block_pic {
+    float: left;
+    width: 300px;
+}
+
+h2 {
+    color: #212121;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.p_block_txt {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 300;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.block_txt {
+    float: left;
+    width: 60%;
+}
+
+
+.block_button {
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 32px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #b3b4b5;
+}
+
+.block_button:hover {
+    background-color: #464646;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+
+.url_layer {
+    color: #505050;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #505050, 1px 1px 1px #8b8b8b, 1px 1px #505050, 2px 2px #ffffff;
+}
+
+
+.content_contacts {
+    width: 1500px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.address {
+    float: left;
+    width: 370px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+.address-h2 {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    text-transform: uppercase;
+}
+
+.address_p {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 29.88px;
+
+
+}
+
+.address-h2-us {
+    padding-left: 150px;
+    padding-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+    color: #4d4d4d;
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.address_t {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shape {
+    padding-left: 150px;
+}
+
+.social_media {
+    float: left;
+    height: 100px;
+    padding-top: 50px;
+    padding-left: 525px;
+}
+
+.icon {
+    display: inline-block;
+    padding-left: 50px;
+    height: 50px;
+    stroke-width: 0;
+    stroke: #6c6c6c;
+    fill: #6c6c6c;
+    opacity: 0.4;
+}
+
+.icon:hover {
+    opacity: 0.9
+}
+
+.footer {
+    float: left;
+    width: 1500px;
+    height: 349px;
+    background-color: #3b3b3b;
+}
+
+
+.information text {
+    padding-left: 450px;
+    height: 284px;
+    float: left;
+}
+
+.block {
+    padding-top: 100px;
+    padding-left: 150px;
+    width: 300px;
+    height: 200px;
+    float: left;
+    text-align: left;
+    color: white;
+}
+
+
+.inf_list {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 150px;
+}
+
+.inf_list_li {
+    color: #ffffff;
+    font-size: 14px;
+
+}
+
+.information-h2 {
+    color: #212121;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.url_footer,
+z2 {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.7px;
+}
+
+.url_footer:hover {
+    border-bottom: 2px solid #ffffff;
+
+}
+
+.footer-three-col-grid {
+    width: 1500px;
+    padding-left: 200px;
+
+}
+
+.footer-grid-item {
+    float: left;
+    width: 390px;
+    text-align: center;
+}
+
+.login {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 28em;
+    min-width: 500px;
+    margin: 100px auto;
+       
+    position: relative;
+    display: block;
+}
+
+.login .head {
+    margin: 15px auto;
+}
+
+.login .form-control[type="submit"] {
+    margin: 20px auto;
+}
+
+.login button {
+    border: 1px solid #eaeaea;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+}
+
+.login button.last {
+    margin-bottom: 25px;
+}
+
+.login button a, .login button a:hover {
+    border: 1px solid #eaeaea;
+    color: #555;
+    text-decoration: none;
+}
+
+.login form {
+    margin-bottom: 10px;
+}
+
+.login div.user_avatar {
+    position: fixed;
+    left: 175px;
+    top: 200px;
+}
+
+.user_avatar img {
+    width: 300px;
+    border-radius: 25px;
+}
+
+.user_not_active {
+    opacity: 0.5;
+}
+
+.user_block{
+    width: 1500px;
+    float: left;
+    padding-bottom: 50px;
+}
+
+.user_block_pic{
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 30px;
+    float: left;
+
+}
+
+.user_activity {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 100;
+    float: left;
+}
+
+.user_description {
+    padding-left: 60px;
+    padding-bottom: 30px;
+    width: 500px;
+    float: left;
+}
+.user_txt_other {
+    color: #727272;
+
+}
+.user_txt_email {
+    color: #727272;
+
+}
+.user_txt_name {
+    color: #727272;
+
+}

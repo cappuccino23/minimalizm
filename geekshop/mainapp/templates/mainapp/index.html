@@ -1,0 +1,69 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block container %}
+
+    {% include 'mainapp/includes/inc__main_menu.html' %}
+
+        <div class="slider padding-site">
+
+            <div class="slider-text">
+
+                <h2 class="slider-h2">Minimalizm</h2>
+                <p class="slider-content">excepteur sint occaecat cupidatat non proident
+                    excepteur sint occaecat cupidatat non proident
+                </p>
+
+                <a href="#" class="button">Start <img class="arrow" src="{% static 'img/arrow.svg' %}"></a>
+
+            </div>
+
+        </div>
+        
+        <div class="duis">
+           
+            <div class="duis-text"> <p class="duis-h2">Duis aute irure</p>
+            
+            Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</div>
+            <div class="duis-text"> <p class="duis-h2">Duis aute irure</p>
+            
+            Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</div>
+            <div class="duis-text"> <p class="duis-h2">Duis aute irure</p>
+            
+            Excepteur sint occaecat cupi datat non it proident, sunt in culpa qui officia dese runtorn mollit anim id est laborum.</div>
+            
+        </div>
+        
+        <div class="shape"><img src=" {% static 'img/Shape.svg' %} "></div>
+        
+        <div class="recent_work">
+           
+           <h2 class="recent_work-h2">Recent Work</h2>
+
+            <div class="two-col-grid">
+                <div class="grid-item-2">
+                   <div class="layer_1"><img src="{% static 'img/1.jpg' %}"></div>
+                   <div class="layer_2"><a href="#" class="url_layer">See more</a></div>
+                </div>
+                <div class="grid-item-2">
+                   <div class="layer_1"><img src="{% static 'img/3.jpg' %}"></div>
+                   <div class="layer_2"><a href="#" class="url_layer">See more</a></div>
+                </div>
+                 <div class="grid-item-2">
+                   <div class="layer_1"><img src="{% static 'img/4.jpg' %}"></div>
+                   <div class="layer_2"><a href="#" class="url_layer">See more</a></div>
+                </div>
+                   <div class="grid-item-2">
+                   <div class="layer_1"><img src="{% static 'img/5.png' %}"></div>
+                   <div class="layer_2"><a href="#" class="url_layer">See more</a></div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="shape"><img src=" {% static 'img/Shape.svg' %} "></div>
+
+{% endblock %}
+        

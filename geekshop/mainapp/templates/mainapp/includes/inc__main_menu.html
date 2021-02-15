@@ -1,0 +1,48 @@
+<div class="header clearfix">
+
+            <a href="{% url 'main:index' %}"> <img class="logo" src="/static/img/logo.svg"></a>
+
+            <ul class="menu clearfix">
+                <li class="menu-list">
+                    <a href="{% url 'main:index' %}" class="menu-link">Home</a>
+                </li>
+
+                <li class="menu-list">
+                    <a href="{% url 'main:products' %}" class="menu-link">Works</a>
+                </li>
+
+                <li class="menu-list">
+                    <a href="{% url 'main:contacts' %}" class="menu-link">Contact</a>
+                </li>
+
+                {% if user.is_authenticated %}
+
+                <li class="menu-list">
+                        <a href="{% url 'auth:edit' %}" class="menu-link">   {{ user.first_name|default:'User' }}  </a>
+                    <a href="{% url 'basket:index' %}" class="menu-link"> Cart {% if basket %} ( {{ basket.0.total_quantity }} items by {{ basket.0.total_cost|floatformat:0 }} RUB  ) {% endif %}  </a>
+                 </li>
+                {% endif %}
+
+             {% if user.is_superuser %}
+
+                <li class="menu-list">
+                        <a href="{% url 'myadmin:index' %}" class="menu-link">   Admins  </a>
+                </li>
+                {% endif %}
+
+
+
+
+                <li class="menu-list">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'auth:logout' %}" class="menu-link">logout</a>
+                    {% else %}
+                        <a href="{% url 'auth:login' %}" class="menu-link">login</a>
+                    {% endif %}
+                </li>
+
+
+            </ul>
+
+
+</div>

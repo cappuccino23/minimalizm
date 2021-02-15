@@ -1,0 +1,22 @@
+[
+	{
+		"name": "dress",
+		"description": "повседневные платья"
+	},
+	{
+		"name": "suit",
+		"description": "Пальто на осень/весну"
+	},
+	{
+		"name": "slacks",
+		"description": "Брюки на все случаи жизни"
+	},
+	{
+		"name": "jacket",
+		"description": "Куртки"
+	},
+	{
+		"name": "skirt",
+		"description": "юбки"
+	}
+]

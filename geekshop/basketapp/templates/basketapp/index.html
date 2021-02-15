@@ -1,0 +1,25 @@
+{% extends 'basketapp/base.html' %}
+{% load static %}
+
+{% block container %}
+
+    {% include 'mainapp/includes/inc__main_menu.html' %}
+
+    <div class="address-h2-us">Cart</div>
+
+    <div class="shape"><img src=" {% static 'img/Shape.svg' %} "></div>
+
+    <h2>
+        Your orders,
+
+        {{ user.first_name|default:'User'|title }}
+
+    </h2>
+
+    <div class="arts_block">
+
+    {% include 'basketapp/includes/inc__cart.html' %}
+
+    </div>
+
+{% endblock %}

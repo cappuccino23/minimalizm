@@ -1,0 +1,54 @@
+{% extends 'myadminapp/base.html' %}
+{% load static %}
+
+{% block container %}
+
+    {% include 'myadminapp/includes/inc__admin_menu.html' %}
+
+    <div class="address-h2-us">Users</div>
+
+    <div class="shape"><img src=" {% static 'img/Shape.svg' %}" alt="pic"></div>
+
+    <br>
+    <br>
+    <a href="{% url 'myadmin:user_create' %}" class="block_button">Create new user</a>
+    <br>
+    <br>
+
+   {% for shop_user in object_list %}
+
+   <div class="user_activity {% if not shop_user.is_active %} user_not_active {% endif %}">
+
+      <div class="user_block">
+
+          <div class="user_block_pic"><img src="/media/{{ shop_user.avatar }}" alt="{{ shop_user.username }}" width="200px;"> </div>
+
+               <div class="user_description">
+                    <p class="user_txt_name">{{ shop_user.username }}</p>
+                    <p class="user_txt_name">{{ shop_user.role }}</p>
+
+                    <p class="user_txt_name">
+                        {% if shop_user.first_name %}
+                            {{ shop_user.first_name|title }}
+                        {% endif %}
+                    </p>
+
+                    <p class="user_txt_other">{{ shop_user.age }}</p>
+                    <p class="user_txt_email">{{ shop_user.email }}</p>
+                    <p class="user_txt_other">{{ shop_user.last_login }}</p>
+                    <br>
+                    <br>
+                    <a href="{% url 'myadmin:user_update' shop_user.pk %}" class="block_button">Update</a>
+                    <a href="{% url 'myadmin:user_delete' shop_user.pk %}" class="block_button">Delete</a>
+
+               </div>
+
+      </div>
+
+   </div>
+
+
+    {% endfor %}
+
+
+{% endblock %}

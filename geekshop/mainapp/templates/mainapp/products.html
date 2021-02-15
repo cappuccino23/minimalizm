@@ -1,0 +1,31 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block container %}
+
+        {% include 'mainapp/includes/inc__main_menu.html' %}
+
+        <div class="address-h2-us">Our Works</div>
+
+        <div class="shape"><img src=" {% static 'img/Shape.svg' %} "></div>
+
+         {% include 'mainapp/includes/inc__sub_menu.html' %}
+
+        <div class="arts_block">
+
+            {% for product in product %}
+
+            <div class="blocks">
+                <div class="block_pic"><img src="{{ product.image.url }} "></div>
+                <div class="block_txt">
+                    <h2>{{ product.name }}</h2>
+                    <p class="p_block_txt"> {{ product.description }}</p>
+                    <a href="{% url 'mainapp:item' product.pk %}" class="block_button">More see</a>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+{% endblock %}

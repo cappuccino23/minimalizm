@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+        <title> {{ page_title|title }} </title>
+    {% endblock %}
+
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-theme.min.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@100;300;400&display=swap" rel="stylesheet">
+    {% endblock %}
+
+    {% block js %}
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+    {% block container %}
+
+    {% endblock %}
+
+    {% block footer %}
+        <div class="footer">
+
+            <div class="information text clearfix">
+
+                <div class="block">
+                    <p class="information-h2">Location</p>
+                    <br>
+                    <p class="z2">1401 South Grand Avenue Los Angeles, CA 90015 (213) 748-2411</p>
+                </div>
+
+                <div class="block">
+
+                    <p class="information-h2">Useful Information</p>
+
+                    <ul class="inf_list">
+                        <li class="inf_list_li"><a href="#" class="url_footer">Our story</a></li>
+                        <li class="inf_list_li"><a href="#" class="url_footer">Mission</a></li>
+                        <li class="inf_list_li"><a href="#" class="url_footer">Mission</a></li>
+
+                    </ul>
+
+                    <ul class="inf_list">
+                        <li class="inf_list_li"><a href="#" class="url_footer">FAQ</a></li>
+                        <li class="inf_list_li"><a href="#" class="url_footer">Contact us</a></li>
+                        <li class="inf_list_li"><a href="#" class="url_footer">Policies</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+                  <div class="footer-three-col-grid">
+
+                        <div class="footer-grid-item">
+                            <p class="footer_txt">© Copyright - GB {% now "Y" %}. </p>
+                        </div>
+
+                        <div class="footer-grid-item">
+                            <a href="#" class="url_footer_2">Terms & Conditions</a> / <a href="#" class="url_footer_2">Privacy policy & Cookies</a>
+                        </div>
+
+                    </div>
+
+
+
+       </div>
+    {% endblock %}
+
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+
+{% block container %}
+
+        {% include 'mainapp/includes/inc__main_menu.html' %}
+        
+        <div class="address-h2-us">Contact US</div>
+
+        <div class="shape"><img src=" {% static 'img/Shape.svg' %} "></div>
+
+        <div class="content_contacts">
+
+            <div class="address">
+               <img src="{% static 'img/location.svg' %} ">
+                <h2 class="address-h2">California</h2>
+
+                <p class="address_p">Phone:</p>
+                <p class="address_t">1900 - 1234 -5678</p>
+                <p class="address_p">Email:</p>
+                <p class="address_t">info@interior.com</p>
+                <p class="address_p">Address:</p>
+                <p class="address_t">12 W 1st St, 90001 Los Angeles, California</p>
+
+            </div>
+            
+            <div class="address">
+               <img src="{% static 'img/location.svg' %}">
+                <h2 class="address-h2">Tokio</h2>
+
+                <p class="address_p">Phone:</p>
+                <p class="address_t">1900 - 1234 -5678</p>
+                <p class="address_p">Email:</p>
+                <p class="address_t">info@interior.com</p>
+                <p class="address_p">Address:</p>
+                <p class="address_t">12 W 1st St, 90001 Los Angeles, California</p>
+
+            </div>
+            
+            <div class="address">
+               <img src="{% static 'img/location.svg' %}">
+                <h2 class="address-h2">London</h2>
+
+                <p class="address_p">Phone:</p>
+                <p class="address_t">1900 - 1234 -5678</p>
+                <p class="address_p">Email:</p>
+                <p class="address_t">info@interior.com</p>
+                <p class="address_p">Address:</p>
+                <p class="address_t">12 W 1st St, 90001 Los Angeles, California</p>
+
+            </div>
+
+        </div>
+
+{% endblock %}

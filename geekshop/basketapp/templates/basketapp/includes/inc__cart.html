@@ -1,0 +1,33 @@
+{% if basket %}
+
+    {% for item in basket %}
+
+                <div class="blocks">
+                        <div class="block_pic"><img src="{{ item.product.image.url }}" height="325px;"></div>
+                        <div class="block_txt">
+                            <h2>{{ item.product.name }}</h2>
+                            <p class="p_block_txt">Price: {{ item.product.price }}</p>
+                            <p class="p_block_txt">{{ item.product.category.name }}</p>
+                            <p class="p_block_txt">{{ item.product.short_desc }}</p>
+                            <input type="number" name="{{ item.pk }}" min="0" max="{{ item.product.quantity }}" value="{{ item.quantity }}">
+
+                            <p class="p_block_txt">{{ item.product_cost }} RUB</p>
+                            <a href="{% url 'basket:delete_product' item.pk %}" class="block_button">Delete</a>
+
+                        </div>
+                </div>
+
+             {% endfor %}
+
+        <div class="block_txt">Cart {{ basket.0.total_quantity }} items by {{ basket.0.total_cost|floatformat:0 }} RUB  </div>
+
+{% else %}
+
+    <div class="block_txt">Cart empty
+        <br>
+        <br>
+        <br>
+        <a href="{% url 'main:index' %}" class="block_button">Go Home</a>
+    </div>
+
+{% endif %}
